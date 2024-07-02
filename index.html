@@ -1,80 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minius</title>
-    <link rel="stylesheet" href="main.css" />
-    <!-- Unicons CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-   <script src="script.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimius</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  </head>
+    <style>
+        .mySlides {display:none;}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="" class="container container-social-media">
+            <div class="main social-media">
+                <div class="box-social-media">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                </div>
 
-  <body>
-
-      <nav class="nav">
-        <i class="uil uil-bars navOpenBtn"></i>
-        <a href="#" class="logo">Miminhos</a>
-
-        <ul class="nav-links">
-          <i class="uil uil-times navCloseBtn"></i>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <i class="uil uil-search search-icon" id="searchIcon"></i>
-          <a href="">
-            <img src="./img/shopping-bag.png" alt="" style="width: 25px; height: 25px;">
-          </a>
+                <div class="endereco">
+                    <i class='bx bx-map'></i> Rua dos Congolenses , Rangel
+                </div>
+            </div>
         </div>
-        <div class="search-box">
-          <i class="uil uil-search search-icon"></i>
-          <input type="text" placeholder="Search here..." />
-        </div>
+        <div class="container container-nav-primaria">
+            <div class="main nav-principal">
+                <div class="logo">
+                    <a href="">Minimius</a>
+                </div>
 
-        
-        
-      </nav>
-      <div class="banner" style="">
-        <div class="overlay"></div>
-        <div class="banner-title">
-          <h1>Encontre os melhores produtos de cabelo</h1>
-          <button class="btn_title"">Explora a loja</button>
-        </div>
-      </div>
+                <div class="barra-pesquisar">
+                    <label for="">
+                        <box-icon name='search'></box-icon>
+                    </label>
+                    <input type="text" placeholder="Pesquise por um produto">
+                </div>
 
-      <div class="container conteudo" style="width: 100%; height: 500px;">
+                <div class="items-nav">
+                    <a href="carrinho.html" style="position: relative;">
+                        <!-- <box-icon name='shopping-bag'></box-icon> -->
+                        <i class='bx bx-shopping-bag'></i>
+                        <span style="position: absolute; right: 0; top: -10px; border-radius: 15px; background-color: #861de9; width: 20px; height: 20px; text-align: center;  color: #fff;">1</span>
+                    </a>
+                    <a href="desejo.html"  style="position: relative;">
+                        <!-- <box-icon name='heart' ></box-icon> -->
+                        <i class='bx bx-heart' ></i>
+                        <span style="position: absolute; right: 0; top: -10px; border-radius: 15px; background-color: #861de9; width: 20px; height: 20px; text-align: center;  color: #fff;">0</span>
 
-      </div>
+                    </a>
+                    <a href="">
+                        <i class='bx bx-user' ></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container container-nav-secundaria">
+            <div class="main nav-secundaria">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="item-menu-categoria">
+                            Categorias
+                            <ul class="submenu-categoria">
+                                <li><a href="produto_cabelo.html">Produtos do Cabelo</a></li>
+                                <li><a href="skin_care.html">Skin Care</a></li>
+                                <li><a href="make_up.html">Make up</a></li>
+                                <li><a href="acessorios.html">Acessorios</a></li>
 
-      <footer>
-        <div class="footer">
-        <div class="row">
-        <a href="#"><i class="fa fa-facebook" style="color: #fff;"></i></a>
-        <a href="#"><i class="fa fa-instagram" style="color: #fff;"></i></a>
-        <a href="#"><i class="fa fa-youtube" style="color: #fff;"></i></a>
-        <a href="#"><i class="fa fa-twitter" style="color: #fff;"></i></a>
+                            </ul>
+
+                        </li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contacto.html">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-        <div class="row">
-        <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contactos</a></li>
-        </ul>
+    </header>
+
+    <div class="container banner">
+        <div class="main banner-img" style="">
+            <img class="mySlides" src="./img/averie-woodard-4nulm-JUYFo-unsplash.jpg" alt="" style="width: 100%; height: 600px; object-fit: cover; border-radius: 30px">
+            <img class="mySlides" src="./img/content-pixie-0z4h9qneDMA-unsplash.jpg" alt="" style="width: 100%; height: 600px; object-fit: cover; border-radius: 30px">
+            <img class="mySlides" src="./img/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg" alt="" style="width: 100%; height: 600px; object-fit: cover; border-radius: 30px">
         </div>
-        
-        <div class="row" style="color: #fff;">
-          Miminhos Copyright © 2024 Todos direitos reservado pela Eva Neto
+    </div>
+
+    <div class="container-categorias-destaques">
+        <div class="main categorias-destaques-title">
+            <h1>Categorias em Destaques</h1>
         </div>
+        <div class="main categorias-destaques">
+            
+            <div class="box-categoria">
+                <a href="produto_cabelo.html" style="text-decoration: none;"  style="display: flex; justify-content: center; align-items: center;" >
+                    <img src="./img/noun-woman-dry-hair-5819220.png" alt="" style="width: 120px; height: 100%; object-fit: cover;">
+                    <div class="title-box-categoria">
+                        <h1 style="">Produtos do Cabelo</h1>
+                        <a href="">mostrar todos</a>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="box-categoria">
+                <a href="skin_care.html" style="display: flex; justify-content: center; align-items: center; text-decoration: none;" >
+                    <img src="./img/noun-skin-care-1335658.png" alt="" style="width: 150px; height: 100%; object-fit: cover;">
+                    <div class="title-box-categoria">
+                        <h1>Skin Care</h1>
+                        <a href="">mostrar todos</a>
+                    </div>
+                </a>
+            </div>
+            <div class="box-categoria">
+                <a href="make_up.html" style="text-decoration: none;"  style="display: flex; justify-content: center; align-items: center;" >
+                    <img src="./img/noun-make-up-6748474.png" alt="" style="width: 150px; height: 100%; object-fit: cover;">
+                    <div class="title-box-categoria">
+                        <h1>Make Up</h1>
+                        <a href="">mostrar todos</a>
+                    </div>
+                </a>
+            </div>
+            <div class="box-categoria">
+                <a href="acessorios.html" style="text-decoration: none;"  style="display: flex; justify-content: center; align-items: center;" >
+                    <img src="./img/noun-hair-ties-4784168.png" alt="" style="width: 150px; height: 100%; object-fit: cover;">
+                    <div class="title-box-categoria">
+                        <h1>Acessorios</h1>
+                        <a href="">mostrar todos</a>
+                    </div>
+                </a>
+            </div>
+        </div>     
+    </div>
+
+    <div class="container-produtos-vendidos" style="height: 500px;">
+        <div class="main" style="">
+            <h1>Produtos mais vendidos</h1>
         </div>
-        </footer>
-  </body>
+        <div class="main content-produtos-vendidos" style="">
+                <div class="box-produto">
+                    <img src="./img/shop/1.jpg" alt="" style="width: 160px; height: 100%; object-fit: cover; object-position: 100%;">
+                    <div class="title-box">
+                        <h1>Escova de Cabelo Baby Hair</h1>
+                        <p>Produtos de Cabelo</p>
+                        <span>700kz</span>
+                        <div style="margin: 10px 0px;">
+                            <a href="">
+                                <box-icon name='shopping-bag'></box-icon>
+                            </a>
+                            <a href="">
+                                <box-icon name='heart' ></box-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-produto">
+                    <img src="./img/shop/IMG-20240510-WA0048.jpg" alt="" style="width: 160px; height: 100%; object-fit: cover;">
+                    <div class="title-box">
+                        <h1>Navalha Facial</h1>
+                        <p>Skin Care</p>
+                        <span>300kz</span>
+                        <div style="margin: 10px 0px;">
+                            <a href="">
+                                <box-icon name='shopping-bag'></box-icon>
+                            </a>
+                            <a href="">
+                                <box-icon name='heart' ></box-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-produto">
+                    <img src="./img/shop/IMG-20240510-WA0051.jpg" alt="" style="width: 160px; height: 100%; object-fit: contain;">
+                    <div class="title-box">
+                        <h1>Decanter para perfume</h1>
+                        <p>Acessorios</p>
+                        <span>1100kz</span>
+                        <div style="margin: 10px 0px;">
+                            <a href="">
+                                <box-icon name='shopping-bag'></box-icon>
+                            </a>
+                            <a href="">
+                                <box-icon name='heart' ></box-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-produto">
+                    <img src="./img/shop/IMG-20240510-WA0031.jpg" alt="" style="width: 160px; height: 100%; object-fit: cover; object-position: 100%;">
+                    <div class="title-box">
+                        <h1>Lip Gloss Victoria's Black</h1>
+                        <p>Make up </p>
+                        <span>950kz</span>
+                        <div style="margin: 10px 0px;">
+                            <a href="">
+                                <box-icon name='shopping-bag'></box-icon>
+                            </a>
+                            <a href="">
+                                <box-icon name='heart' ></box-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-produto">
+                    <img src="./img/shop/IMG-20240510-WA0040.jpg" alt="" style="width: 160px; height: 100%; object-fit: cover; object-position: 100%;">
+                    <div class="title-box">
+                        <h1>Molas de Cabelo</h1>
+                        <p>Produtos de Cabelos</p>
+                        <span>1300kz</span>
+                        <div style="margin: 10px 0px;">
+                            <a href="">
+                                <box-icon name='shopping-bag'></box-icon>
+                            </a>
+                            <a href="">
+                                <box-icon name='heart' ></box-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-produto">
+                    <img src="./img/shop/IMG-20240510-WA0035.jpg" alt="" style="width: 160px; height: 100%; object-fit: cover; object-position: 100%;">
+                    <div class="title-box">
+                        <h1>Turbantes</h1>
+                        <p>Produto do Cabelo</p>
+                        <span>1000kz</span>
+                        <div style="margin: 10px 0px;">
+                            <a href="">
+                                <box-icon name='shopping-bag'></box-icon>
+                            </a>
+                            <a href="">
+                                <box-icon name='heart' ></box-icon>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+    <div style="padding: 30px;" >
+        <a href="" style="margin: 0 auto; text-align: center; display: block; width: 150px; background-color: #861de9; padding: 15px 30px; text-decoration: none; border-radius: 3px;  color: #fff;">ver mais</a>
+    </div>
+    
+    <div class="container-desconto">
+        <div class="content-desconto">
+            <h1>CADASTRE-SE E GANHE DESCONTO NA PRIMEIRA COMPRA!</h1>
+            <p>Receba promoções exclusivas, novidades e dicas de especialistas em primeira mão!</p>
+            <div class="form-group-desconto" style="display: flex; justify-content: center; gap: 10px;">
+                <input type="text" name="" id="" style="width: 200px;" placeholder="Primeiro Nome">
+                <input type="text" name="" id="" style="width: 500px;" placeholder="Email">
+                <input class="btn_desconto" type="button" value="enviar" style="">
+            </div>
+            <div style="width: 800px; display: flex; gap: 5px; align-items: baseline; justify-content: center;">
+                <input type="radio"><p style="">Ao me cadastrar na newsletter, concordo que quero receber ofertas, artigos, informativos e notícias por e-mail, e também concordo com a política de privacidade.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+     <div class="container">
+        <div class="main content-footer">
+            <div class="footer-col">
+            <h4>Categorias</h4>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+            </ul>
+            </div>
+            <div class="footer-col">
+            <h4>Menu</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destaques</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            </div>
+            <div class="footer-col">
+            <h4>Redes Sociais</h4>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="topo">
+        <a href="#" style="text-decoration: none; color: #fff;background-color: #fff;padding: 10px;display: flex;align-items: center;justify-content: center; width: 40px; height: 40px; border-radius: 5px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="width:30px; height:30px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+            </svg>  
+        </a>
+    </div>
+  </footer>
+
+  <div style="background-color: aliceblue; padding: 10px;">
+    <p style="text-align: center; font-size: 20px; color:#861de9;">Copyright © Eva Neto All Rights Reserved.</p>
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000);
+    }
+    </script>
+</body>
 </html>

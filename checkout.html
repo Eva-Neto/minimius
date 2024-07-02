@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="./css/chekout.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <ul class="menu" style="">
+            <li><a href="index.html">Home</a></li> /
+            <li><a href="carrinho.html">Carrinho</a></li> / 
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+        <div class="title-header">
+            <h1>Finalizar a Compra</h1>
+        </div>
+    </header>
+
+    <div class="" style="padding: 20px 30px; display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 80px 1fr;">
+        <h1 style="color: purple;">Finalizar a Compra</h1>
+        <div class="container-cart-produtos" style="position: relative; padding: 10px;grid-column: 1/2; grid-row: 2/3; ">
+            <div class="container">
+                <ul class="responsive-table">
+                  <li class="table-header">
+                    <div class="col col-1"></div>
+                    <div class="col col-2" style="margin-left: 20px;">Nome</div>
+                    <div class="col col-3">Preço</div>
+                    <div class="col col-4">Quantidade</div>
+                    <div class="col col-4"></div>
+                    <div class="col col-4">Total</div>
+
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="">
+                        <img src="./img/shop/1.jpg" alt="" style="width: 150px; height: 100%; object-fit: cover; object-position: 100%;">
+                    </div>
+                    <div class="col col-2" style="margin-left: 10px; margin-top: 10px;">Escova de Cabelo Baby Hair</div>
+                    <div class="col col-3" style="margin-top: 10px;">750kz</div>
+                    <div class="col col-4" style="margin-top: 10px;">
+                        <input type="number" value="1" style="width: 30px; border: none;" min="0">
+                    </div>
+                    <div class="col col-4" style="margin-top: 10px;"><i class='bx bxs-trash'></i></div>
+                    <div class="col col-4" style="margin-top: 10px;">2500kz</div>
+                </li>
+
+                <li class="table-row">
+                    <div class="col col-1" data-label="">
+                        <img src="./img/shop/IMG-20240510-WA0034.jpg" alt="" style="width: 150px; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="col col-2" style="margin-left: 10px; margin-top: 10px;">
+                        Molas de Cabelo
+                    </div>
+                    <div class="col col-3" style="margin-top: 10px;">750kz</div>
+                    <div class="col col-4" style="margin-top: 10px;">
+                        <input type="number" value="1" style="width: 30px; border: none;" min="0">
+                    </div>
+                    <div class="col col-4" style="margin-top: 10px;"><i class='bx bxs-trash'></i></div>
+                    <div class="col col-4" style="margin-top: 10px;">1300kz</div>
+                </li>
+
+                </ul>
+              </div>
+        </div>
+        <div class="conta" style="grid-column: 2/3; grid-row: 2/3; padding: 10px;">
+            <h1 style="color: purple;">Login</h1>
+           
+            <div class="form-group" style="width: 100%;">
+                <label for="">Email</label>
+                <input type="text" placeholder="Digite email" style="width: 400px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+
+            <div class="form-group">
+                <label for="">Senha</label>
+                <input type="text" placeholder="Digite email" style="width: 400px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div style="margin: 10px 0px;">
+                <button style="padding: 10px; background-color: purple; color: #ffff; width: 200px; border: none;">Entrar</button>
+            </div>
+
+            <div>
+                <span>Não tens uma conta? <a href="registrar.html" style="color: purple;">Crie agora</a></span>
+            </div>   
+           
+        </div>
+        
+        <div style="display: flex;align-items: end; padding: 20px; flex-direction: column; grid-row: 3/4; grid-column: 1/3;">
+            <h1 style="text-align: right;">Total : 15000kz</h1>
+            <button style="width: 200px; padding: 10px; background-color: purple; border: none; color: #fff;">Finalizar</button>
+        </div>
+    </div>
+    
+</body>
+</html>
