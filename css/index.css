@@ -19,6 +19,8 @@ html {
   box-sizing: inherit;
   scroll-behavior: smooth;
   height: -webkit-fill-available;
+  background-color: aliceblue;
+
 }
 
 *{
@@ -38,7 +40,6 @@ a{
 header{
     width: 100%;
     height: auto;
-    background-color: #fff;
 }
 
 
